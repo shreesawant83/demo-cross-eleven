@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal - Cross Eleven</title>
+    <link rel="icon" type="image/png" href="https://favicon.io/favicon-generator/eyJ0ZXh0IjoiUyIsImZvbnQiOiJBcmlhbCIsInNpemUiOjMyLCJjb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kIjoiIzAwMDAwMCIsInBhZGRpbmciOjAsIm1hcmdpbiI6MCwiYWxpZ24iOiJjZW50ZXIifQ==?v=2">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .modal-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        .modal-content {
+            background: url('https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=800') no-repeat center center/cover;
+            position: relative;
+            overflow: hidden;
+        }
+        .modal-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 1;
+        }
+        .modal-content > * {
+            position: relative;
+            z-index: 2;
+        }
+        .discount-banner {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+        }
+        .input-field {
+            transition: border-color 0.3s ease;
+        }
+        .input-field:focus {
+            border-color: #000;
+            outline: none;
+        }
+        .btn-primary {
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Login Modal -->
+    <div id="login-modal" class="fixed inset-0 modal-overlay flex items-center justify-center z-50 hidden">
+        <div class="modal-content max-w-md w-full mx-4 rounded-lg shadow-lg p-8">
+            <div class="discount-banner font-playfair">
+                Get Up to 10% Off Your Next Purchase!
+            </div>
+            <h2 class="text-2xl font-playfair mb-6 text-center">Login</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm mb-2">Email</label>
+                    <input type="email" id="email" class="input-field w-full border border-gray-300 rounded py-2 px-3 text-sm" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-6">
+                    <label for="password" class="block text-sm mb-2">Password</label>
+                    <input type="password" id="password" class="input-field w-full border border-gray-300 rounded py-2 px-3 text-sm" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-primary w-full bg-black text-white py-2 rounded text-sm font-bold uppercase tracking-wider">Login</button>
+            </form>
+            <p class="text-sm text-center mt-4">
+                Don't have an account? <a href="#signup-modal" class="underline hover:text-gray-600">Sign Up</a>
+            </p>
+            <button class="absolute top-4 right-4 text-gray-600 hover:text-black" onclick="closeModal()">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() {
+            document.getElementById('login-modal').classList.add('hidden');
+        }
+        // Simulate modal opening for demo
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('login-modal').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>

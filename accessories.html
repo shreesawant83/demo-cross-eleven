@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Cross Eleven</title>
+    <link rel="icon" type="image/png" href="https://favicon.io/favicon-generator/eyJ0ZXh0IjoiUyIsImZvbnQiOiJBcmlhbCIsInNpemUiOjMyLCJjb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kIjoiIzAwMDAwMCIsInBhZGRpbmciOjAsIm1hcmdpbiI6MCwiYWxpZ24iOiJjZW50ZXIifQ==?v=2">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .nav-link {
+            position: relative;
+            padding-bottom: 5px;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Announcement Bar -->
+    <div class="bg-black text-white text-center py-2 text-xs md:text-sm">
+        Free shipping on all orders over ₹5,000 | Use code WELCOME10 for 10% off your first order
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white border-b border-gray-200 px-4 md:px-8 py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <button class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <a href="./index.html" class="text-2xl font-playfair font-bold tracking-wider">CROSS ELEVEN</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <div class="dropdown relative">
+                    <a href="./index.html" class="nav-link text-sm uppercase tracking-wider font-bold">Shop</a>
+                    <div class="dropdown-menu absolute hidden bg-white py-2 w-48 shadow-lg border border-gray-100">
+                        <a href="./new-arrivals.html" class="block px-4 py-2 text-sm hover:bg-gray-50">New Arrivals</a>
+                        <a href="./dresses.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Dresses</a>
+                        <a href="./tops.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Tops</a>
+                        <a href="./bottoms.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Bottoms</a>
+                        <a href="./accessories.html" class="block px-4 py-2 text-sm hover:bg-gray-50">Accessories</a>
+                    </div>
+                </div>
+                <a href="./collections.html" class="nav-link text-sm uppercase tracking-wider">Collections</a>
+                <a href="./about.html" class="nav-link text-sm uppercase tracking-wider">About</a>
+                <a href="./journal.html" class="nav-link text-sm uppercase tracking-wider">Journal</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:block">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </a>
+                <a href="#login-modal">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Accessories Section -->
+    <section class="py-16 px-4 md:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl md:text-4xl font-playfair text-center mb-12">Accessories</h1>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+                <div class="product-card">
+                    <a href="#">
+                        <div class="overflow-hidden">
+                            <img src="https://th.bing.com/th/id/OIP.PFFxiVSkBArh20eM5UnKiQHaHa?cb=iwp2&rs=1&pid=ImgDetMain" 
+                                 alt="Leather Belt" 
+                                 class="w-full h-80 object-cover product-image transition-transform">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm">Leather Belt</h3>
+                            <p class="text-sm text-gray-600">₹2,999</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="overflow-hidden">
+                            <img src="https://th.bing.com/th/id/OIP.q6yw0q1dYSl-QucvboKAtwHaHa?cb=iwp2&rs=1&pid=ImgDetMain" 
+                                 alt="Silk Scarf" 
+                                 class="w-full h-80 object-cover product-image transition-transform">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm">Silk Scarf</h3>
+                            <p class="text-sm text-gray-600">₹4,499</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="overflow-hidden">
+                            <img src="https://i.pinimg.com/originals/77/c4/83/77c4837ebd66b2c177ab1b80aeb101d7.jpg" 
+                                 alt="Gold Necklace" 
+                                 class="w-full h-80 object-cover product-image transition-transform">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm">Gold Necklace</h3>
+                            <p class="text-sm text-gray-600">₹7,999</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-card">
+                    <a href="#">
+                        <div class="overflow-hidden">
+                            <img src="https://th.bing.com/th/id/OIP.Liria2HQEiprgszFz9x1gAHaHa?cb=iwp2&rs=1&pid=ImgDetMain" 
+                                 alt="Woven Tote Bag" 
+                                 class="w-full h-80 object-cover product-image transition-transform">
+                        </div>
+                        <div class="mt-4">
+                            <h3 class="text-sm">Woven Tote Bag</h3>
+                            <p class="text-sm text-gray-600">₹5,499</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="font-playfair text-lg mb-4">Shop</h3>
+                <ul class="space-y-2">
+                    <li><a href="/new-arrivals.html" class="text-sm hover:underline">New Arrivals</a></li>
+                    <li><a href="/dresses.html" class="text-sm hover:underline">Dresses</a></li>
+                    <li><a href="/tops.html" class="text-sm hover:underline">Tops</a></li>
+                    <li><a href="/bottoms.html" class="text-sm hover:underline">Bottoms</a></li>
+                    <li><a href="/accessories.html" class="text-sm hover:underline">Accessories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-playfair text-lg mb-4">Information</h3>
+                <ul class="space-y-2">
+                    <li><a href="/about.html" class="text-sm hover:underline">About Us</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Sustainability</a></li>
+                    <li><a href="/journal.html" class="text-sm hover:underline">Journal</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Contact</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Stockists</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-playfair text-lg mb-4">Customer Service</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-sm hover:underline">Shipping & Returns</a></li>
+                    <li><a href="#" class="text-sm hover:underline">Store Policy</a></li>
+                    <li><a href="#" class="text-sm hover detriment:underline">Payment Methods</a></li>
+                    <li><a href="#" class="text-sm hover:underline">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-playfair text-lg mb-4">Contact</h3>
+                <address class="not-italic text-sm">
+                    <p>123 Fashion Street</p>
+                    <p>London, UK</p>
+                    <p class="mt-2">hello@crosseleven.com</p>
+                    <p>+44 123 456 7890</p>
+                </address>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"></path></svg></a>
+                    <a href="#"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.41.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg></a>
+                    <a href="#"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-gray-200 mt-12 pt-8 text-center text-sm">
+            <p>© 2025 Cross Eleven. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('nav button').addEventListener('click', function() {
+            console.log('Mobile menu toggled');
+        });
+        document.querySelectorAll('.product-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.querySelector('img').style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.querySelector('img').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
